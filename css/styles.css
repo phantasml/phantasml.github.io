@@ -31,6 +31,10 @@
     vertical-align: baseline;
 }
 
+*:focus {
+    outline: none;
+}
+
 :root {
     /* Variable declarations. */
 
@@ -39,9 +43,11 @@
     --background-darkest: #252525;
 
     --card-bg: #212121;
+    --card-bg-dark: #191919;
 
     --text: #ae94fc;
     --links: #5016fc;
+    --links-darker: #3d17ad;
 
     --core-grad1: #3500d3;
     --core-grad2: #190061;
@@ -80,7 +86,14 @@ a {
     font-weight: 800;
 }
 
+a:focus {
+    color: var(--links-darker);
+}
+
 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
     border-radius: 5px;
     height: 90px;
@@ -156,11 +169,15 @@ img {
     display: inline-block;
     border-radius: 10px;
     background-color: var(--card-bg);
-    width: 270px;
+    width: 250px;
     height: 325px;
     margin: 10px;
     padding: 7px;
     text-align: justify;
+}
+
+.card:focus {
+    background-color: var(--card-bg-dark);
 }
 
 
