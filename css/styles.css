@@ -1,0 +1,188 @@
+/*
+    X
+    XX
+    XX         XX       X
+    XX          XX      XX
+    XX                  XX
+    XXXXX                X
+    XX   X        X      X
+    X     XX      X      XX
+    X      X      X       X
+    X      X      X
+    X      X      XX      xx
+
+
+
+    Hey! Welcome to the stylesheet.
+    It's not a framework or intended for general use, but feel free to take snippets.
+    Enjoy the ride! And don't forget: ctrl-f.
+*/
+
+* {
+    /*
+        A CSS reset.
+    */
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+:root {
+    /* Variable declarations. */
+
+    --background: #303030;
+    --background-darker: #282828;
+    --background-darkest: #252525;
+
+    --card-bg: #212121;
+
+    --text: #ae94fc;
+    --links: #5016fc;
+
+    --core-grad1: #3500d3;
+    --core-grad2: #190061;
+    --white: #fff;
+
+    /* Styling basics. */
+
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*
+    Classes for HTML elements.
+*/
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--white);
+    font-weight: 300;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3vw;
+}
+
+p {
+    padding: 15px;
+}
+
+a {
+    color: var(--links);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 90px;
+}
+
+#welcome-main {
+    background-image: linear-gradient(45deg, var(--core-grad1), var(--core-grad2));
+    color: var(--white);
+    display: flex;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#main-title {
+    font-size: 8vw;
+    font-weight: 200;
+}
+
+/* 
+    Background classes.
+*/
+
+.bg-darkest {
+    background-color: var(--background-darkest);
+}
+
+.bg-darker {
+    background-color: var(--background-darker);
+}
+
+/*
+    Container classes.
+*/
+
+.container-flex {
+    /*
+        This is the container used for most elements.
+        It cover's the viewport's height. Ultimately, it works well.
+    */
+
+    display: flex;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.larger-container {
+    /*
+        This allows a container to 'stretch' past 100vh.
+    */
+
+    height: 100%;
+}
+
+.card-container {
+    display: flex;
+    margin: 25px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+/*
+    The card.
+*/
+
+.card {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    width: 200px;
+    height: 325px;
+    margin: 10px;
+    padding: 7px;
+}
+
+
+/* 
+    Media queries, for mobile devices.
+*/
+
+@media (max-width: 975px) {
+    #main-title {
+        font-size: 6.67rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 555px) {
+    .larger-container {
+        /*
+            Negate effects of larger-container when not needed.
+        */
+
+        height: 100vh !important;
+    }
+}

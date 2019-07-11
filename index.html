@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    X
+    XX
+    XX         XX       X
+    XX          XX      XX
+    XX                  XX
+    XXXXX                X
+    XX   X        X      X
+    X     XX      X      XX
+    X      X      X       X
+    X      X      X
+    X      X      XX      xx
+
+    Welcome to the HTML! I haven't spent too much time on making this as easy to 
+    read as other things. It should still be extensively navigatable, however.
+-->
+
+<!--
+    +--------------------+
+    |                    |
+    |        XXXXXXX     |
+    |       XX     X     |
+    |      X     XXX     |
+    |          XXX       |
+    |         X          |
+    |         X          |
+    |                    |
+    |         X          |
+    |                    |
+    +--------------------+
+
+    If you're a keyboard user, just navigate with tab. It should let you jump around with ease.
+-->
+
+<head>
+    <meta charset="utf-8">
+
+    <title>phantasml's site.</title>
+
+    <meta name="description" content="phantasml's site. navigate with tab or by scrolling. peek at the source if you want to.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <!--
+        Design explained:
+            * Use full viewport height containers for content.
+            * Try to use single colour blocks in order to not overwhelm the user.
+            * 1 gradient for emphasis.
+    -->
+
+    <main>
+        <div id="welcome-main" tabindex="1">
+        <!--
+            Welcome the user.
+        -->
+            <h1 id="main-title">
+                Hello.
+            </h1>
+            <br>
+
+            <h2>
+                I'm phantasml.  
+            </h2>
+        </div>
+
+        <div class="container-flex bg-darkest" tabindex="2">
+            <!--
+                Very brief overview.
+            -->
+            
+            <h1>
+                Wait, who?
+            </h1>
+         
+            <h2>
+                I'm a UK based student.  
+            </h2>
+        </div>
+
+        <div class="container-flex bg-darker larger-container" tabindex="3">
+            <!--
+                Cards to display information.
+            -->
+
+            <h1>
+                OK. Have you done anything?
+            </h1>
+             
+            <h2>
+                Yeah. Take a look at these cards.
+            </h2>
+            
+            <div class="card-container">
+                <span class="card" tabindex="4">
+                    <img alt="CyberDiscovery" src="https://www.joincyberdiscovery.com/assets/1.6.10/images/logo-cyber-discovery-home.png">
+                    <br>
+
+                    <p>
+                        I took part in CyberDiscovery. I completed both Game and Essentials and 
+                        qualified for CyberStart Elite.
+                    </p>
+                </span>
+
+                <span class="card" tabindex="5">
+                    <img alt="FreeCodeCamp" src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png">
+                    <br>
+
+                    <p>
+                        I am currently taking part in FreeCodeCamp. So far, I have completed 5/30 projects.
+                        I am working on completing more.
+                    </p>
+                </span>
+            </div>
+            
+        </div>
+
+        <div class="container-flex" tabindex="6">
+            <!--
+                Contact information.
+            -->
+
+            <h1>
+                Contact information?
+            </h1>
+                 
+            <h2>
+                You can contact me on 
+                <a href="https://github.com/phantasml" target="_blank" tabindex="7">
+                    Github.
+                </a>
+            </h2>
+        </div>
+    </main>
+
+</body>
+
+</html>
