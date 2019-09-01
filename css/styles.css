@@ -184,6 +184,10 @@ img {
     justify-content: center;
     flex-flow: column wrap;
     align-items: center;
+
+    /* For mobile users. */
+
+    padding: 12px;
 }
 
 .larger-container {
